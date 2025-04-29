@@ -1,0 +1,43 @@
+{
+    "name": "private-packagist/oidc-identities",
+    "description": "Create OIDC tokens on different platforms",
+    "license": "MIT",
+    "keywords": ["openid connect", "oidc", "identities"],
+    "autoload": {
+        "psr-4": {
+            "PrivatePackagist\\OIDC\\Identities\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PrivatePackagist\\OIDC\\Identities\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2.5 || ^8.0",
+        "psr/log": "^1.0 || ^2.0 || ^3.0",
+        "php-http/client-common": "^1.9 || ^2.7"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.11.8",
+        "phpstan/phpstan-phpunit": "^1.4.0",
+        "phpstan/phpstan-deprecation-rules": "^1.2.0",
+        "phpstan/phpstan-strict-rules": "^1.6.0",
+        "phpunit/phpunit": "^8.5",
+        "php-http/mock-client": "^1.6",
+        "nyholm/psr7": "^1.8",
+        "symfony/http-client": "^5.4",
+        "monolog/monolog": "^2",
+        "friendsofphp/php-cs-fixer": "^3.4",
+        "phpstan/extension-installer": "^1.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
+        },
+        "platform": {
+            "php": "7.2.5"
+        }
+    }
+}
