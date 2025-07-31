@@ -13,7 +13,7 @@ use Http\Client\Common\HttpMethodsClient;
 use PrivatePackagist\OIDC\Identities\GitHubActions\GitHubActionsIdentity;
 use Psr\Log\LoggerInterface;
 
-final class TokenGenerator
+final class TokenGenerator implements TokenGeneratorInterface
 {
     /**
      * @var list<GitHubActionsIdentity>
