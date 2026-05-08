@@ -1,4 +1,4 @@
-# packagist/publish-artifact-github-action
+# private-packagist/oidc-identities
 
 GitHub Action to publish artifacts as package versions to Private Packagist.
 
